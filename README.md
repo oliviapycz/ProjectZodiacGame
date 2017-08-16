@@ -9,6 +9,8 @@ JS
 a little bit of Jquery with Notify.js
 
 ## BUGS TO FIX
+Sounds not working on Phone
+
 
 The computer choice is never Seiya
 
