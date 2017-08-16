@@ -1,0 +1,220 @@
+.containerFull{
+  background-image: url('../images/bintang.gif');
+  background-position: center;
+  background-size: contain;
+  background-repeat: round;
+}
+
+header{
+  border-bottom: 1px solid lightgrey;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+h1{
+  font-family: 'Acme', sans-serif !important;
+  font-size: 20px !important;
+  margin-top: 7px !important;
+  margin-bottom: 0 !important;
+  color: #fff !important;
+}
+h2{
+  font-family: 'Acme', sans-serif !important;
+  font-size: 16px !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  color: #fff !important;
+}
+h3{
+  font-family: 'Acme', sans-serif !important;
+  font-size: 38px !important;
+  background: -webkit-linear-gradient(#D59A00, #d25800,#CE1900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h4{
+  font-family: 'Acme', sans-serif !important;
+  color: #fff !important;
+  font-size: 20px !important;
+  margin-top: 5px !important;
+}
+h5{
+  font-family: 'Acme', sans-serif !important;
+  color: #fff !important;
+  font-size: 12px !important;
+  padding: 0 !important;
+  text-align: center;
+  /*margin-top: 5px !important;*/
+}
+p{
+  font-family: 'Acme', sans-serif !important;
+  font-size: 1.5em !important;
+  margin-bottom: 5px !important;
+  color: #ffffff !important;
+}
+i{
+  color: #fff;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.minHeight35{
+  min-height: 35vh;
+}
+
+.btn{
+  padding: 0 !important;
+}
+.choosePlayer{
+  padding-left: 2% !important;
+  padding-right: 2% !important;
+  margin-bottom: 5px;
+}
+.arena{
+  padding-top: 8px !important;
+  padding-left: 2% !important;
+  padding-right: 2% !important;
+  background-image: url('../images/saint.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+.player, .computer{
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 15px !important;
+}
+.attaque{
+  font-family: 'Acme', sans-serif !important;
+  font-size: 1.5em !important;
+  margin-bottom: 5px !important;
+  background: -webkit-linear-gradient(#D59A00, #d25800,#CE1900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.win-lose p{
+  margin-top: 20px !important;
+}
+.row{
+  margin-left: inherit !important;
+  margin-right: inherit !important;
+}
+
+div{
+  margin-bottom: 2px !important;
+}
+
+.copyright{
+  font-size: 12px !important;
+  margin: 0 !important;
+  margin-top: 4px !important;
+}
+
+#shaka{
+display: none;
+}
+
+.btnTryAgain{
+  width: 120px;
+  height: 25px;
+  border-radius: inherit;
+  font-family: 'Acme', sans-serif !important;
+}
+.btnTryAgain:hover{
+  background: -webkit-linear-gradient(#D59A00, #d25800,#CE1900);
+  -webkit-text-fill-color: black;
+}
+
+
+
+/*RULES MODAL*/
+
+.rulesModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    margin: auto !important;
+    background: -webkit-linear-gradient(#D59A00, #d25800,#CE1900);
+}
+
+.rulesModal div{
+  padding: inherit !important;
+}
+.rulesModal p{
+  padding: inherit !important;
+  margin-top: 10px !important;
+}
+/* The Close Button */
+.close {
+    color: #000 !important;;
+    font-size: 26px !important;
+    line-height: 20px !important;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff !important;
+  cursor: pointer;
+  font-size: 30px !important;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+@media only screen and (min-width: 769px) {
+  .containerFull{
+    width: 700px;
+    margin: 0 auto;
+  }
+  h1{
+    font-size: 36px !important;
+    line-height: 72px !important;
+  }
+  h2{
+  font-size: 28px !important;
+  }
+  h3{
+  font-size: 42px !important;
+  }
+  h4{
+    font-size: 28px !important;
+  }
+  h5{
+    font-size: 22px !important;
+  }
+  p{
+    font-size: 2em !important;
+  }
+  .rulesModal{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: 500px;
+  }
+  .rulesModal p{
+    padding: inherit !important;
+    margin-top: 20px !important;
+  }
+  .win-lose p{
+    margin-top: 85px !important;
+  }
+}
