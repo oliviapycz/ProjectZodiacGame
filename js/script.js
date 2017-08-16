@@ -1,11 +1,9 @@
 $.notify("This game is better with the sound on", 'info');
 
 var audioSound = document.getElementById('backgroundSound');
-// var seiyaSound = document.getElementById('seiyaSound');
 var sound = document.getElementById('volume');
 sound.addEventListener('click',function(){
     audioSound.play();
-    // seiyaSound.play();
 });
 
 // BUGS TO FIX
@@ -82,7 +80,8 @@ for (var i = 0; i < buttonClicked.length; i++) {
 
           if (playerChoice === computerChoice) {
             winLose.innerHTML ="It's a Tie";
-            soundAttaque.innerHTML = "<audio src='audio/tie.mp3' type='audio/mp3' autoplay=''>";
+            soundAttaque.innerHTML = "<audio id='tieSound' src='audio/tie.mp3' type='audio/mp3' autoplay=''>";
+            document.getElementById('tieSound').play();
             attaque.innerHTML = "";
           }
           else if (playerChoice === "seiya") {
@@ -95,7 +94,8 @@ for (var i = 0; i < buttonClicked.length; i++) {
               winLose.innerHTML = "WINS";
             }
             else{
-              soundAttaque.innerHTML = "<audio src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='loseSound' src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('loseSound').play();
               attaque.innerHTML = "Seiya died in one kick";
               winLose.innerHTML = "LOSES";
             }
@@ -106,11 +106,13 @@ for (var i = 0; i < buttonClicked.length; i++) {
             knightWin.innerHTML="<img src='images/hyoga.png'/>";
             if(computerChoice === "seiya" || computerChoice === "shun"){
               attaque.innerHTML = "Daiyamondo Dasuto";
-              soundAttaque.innerHTML = "<audio src='audio/hyoga.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='hyogaSound' src='audio/hyoga.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('hyogaSound').play();
               winLose.innerHTML = "WINS";
             }
             else{
-              soundAttaque.innerHTML = "<audio src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='loseSound' src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('loseSound').play();
               attaque.innerHTML = "hyoga died in one kick";
               winLose.innerHTML = "LOSES";
             }
@@ -121,11 +123,13 @@ for (var i = 0; i < buttonClicked.length; i++) {
             knightWin.innerHTML="<img src='images/shiryu.png'/>";
             if(computerChoice === "hyoga" || computerChoice === "seiya"){
               attaque.innerHTML = "Rozan Shō Ryū Ha";
-              soundAttaque.innerHTML = "<audio src='audio/shiryu.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='shiryuSound' src='audio/shiryu.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('shiryuSound').play();
               winLose.innerHTML = "WINS";
             }
             else{
-              soundAttaque.innerHTML = "<audio src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='loseSound' src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('loseSound').play();
               attaque.innerHTML = "shiryu died in one kick";
               winLose.innerHTML = "LOSES";
             }
@@ -136,11 +140,13 @@ for (var i = 0; i < buttonClicked.length; i++) {
             knightWin.innerHTML="<img src='images/ikki.png'/>";
             if(computerChoice === "shiryu" || computerChoice === "hyoga"){
               attaque.innerHTML = "Phoenix Gen Ma Ken";
-              soundAttaque.innerHTML = "<audio src='audio/ikki.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='ikkiSound' src='audio/ikki.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('ikkiSound').play();
               winLose.innerHTML = "WINS";
             }
             else{
-              soundAttaque.innerHTML = "<audio src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='loseSound' src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('loseSound').play();
               attaque.innerHTML = "Ikki died in one kick";
               winLose.innerHTML = "LOSES";
             }
@@ -151,11 +157,13 @@ for (var i = 0; i < buttonClicked.length; i++) {
             knightWin.innerHTML="<img src='images/shun.png'/>";
             if(computerChoice === "ikki" || computerChoice === "shiryu"){
               attaque.innerHTML = "Nebyura Chēn";
-              soundAttaque.innerHTML = "<audio src='audio/shun.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='shunSound' src='audio/shun.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('shunSound').play();
               winLose.innerHTML = "WINS";
             }
             else{
-              soundAttaque.innerHTML = "<audio src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='loseSound' src='audio/lose.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('loseSound').play();
               attaque.innerHTML = "Shun died in one kick";
               winLose.innerHTML = "LOSES";
             }
@@ -167,7 +175,8 @@ for (var i = 0; i < buttonClicked.length; i++) {
               knightChosen.innerHTML="<img src='images/shaka.jpg'/>";
               knightWin.innerHTML="<img src='images/shaka.jpg'/>";
               attaque.innerHTML = "Tenbu Hôri";
-              soundAttaque.innerHTML = "<audio src='audio/shaka.mp3' type='audio/mp3' autoplay=''>";
+              soundAttaque.innerHTML = "<audio id='shakaSound' src='audio/shaka.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('shakaSound').play();
               winLose.innerHTML = "WINS";
             }
           }
