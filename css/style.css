@@ -7,9 +7,10 @@
 
 header{
   border-bottom: 1px solid lightgrey;
+  padding: inherit !important;
 }
 #volume{
-  position: fixed;
+  padding: inherit !important;
 }
 #volume:hover,
 #volume:focus {
@@ -23,7 +24,7 @@ img{
 
 h1{
   font-family: 'Acme', sans-serif !important;
-  font-size: 20px !important;
+  font-size: 16px !important;
   margin-top: 7px !important;
   margin-bottom: 0 !important;
   color: #fff !important;
