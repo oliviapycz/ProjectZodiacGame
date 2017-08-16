@@ -1,11 +1,11 @@
 $.notify("This game is better with the sound on", 'info');
 
 var audioSound = document.getElementById('backgroundSound');
-var seiyaSound = document.getElementById('seiyaSound');
+// var seiyaSound = document.getElementById('seiyaSound');
 var sound = document.getElementById('volume');
 sound.addEventListener('click',function(){
     audioSound.play();
-    seiyaSound.play();
+    // seiyaSound.play();
 });
 
 // BUGS TO FIX
@@ -91,6 +91,7 @@ for (var i = 0; i < buttonClicked.length; i++) {
             if(computerChoice === "shun" || computerChoice === "ikki"){
               attaque.innerHTML = "Pegasasu Ryūsei Ken";
               soundAttaque.innerHTML = "<audio id='seiyaSound' src='audio/seiya.mp3' type='audio/mp3' autoplay=''>";
+              document.getElementById('seiyaSound').play();
               winLose.innerHTML = "WINS";
             }
             else{
