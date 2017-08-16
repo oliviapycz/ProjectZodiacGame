@@ -8,7 +8,13 @@
 header{
   border-bottom: 1px solid lightgrey;
 }
-
+#volume{
+  position: fixed;
+}
+#volume:hover,
+#volume:focus {
+  cursor: pointer;
+}
 img{
   max-width: 100%;
   height: auto;

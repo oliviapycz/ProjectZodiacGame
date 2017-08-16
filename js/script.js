@@ -1,5 +1,11 @@
 $.notify("This game is better with the sound on", 'info');
 
+var audioSound = document.getElementById('audio');
+var sound = document.getElementById('volume');
+sound.addEventListener('click',function(){
+    audioSound.play();
+});
+
 // BUGS TO FIX
 // seiya never the computer choice
 // how to forbid to play again without having to reload the game
