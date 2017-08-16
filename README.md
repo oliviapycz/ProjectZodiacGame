@@ -27,3 +27,5 @@ click on the "+" button in the footer
 enter the code : tenbu horin
 
 the new knight will always win the fights
+
+![alt text](https://github.com/oliviapycz/ProjectZodiacGame/images/illustration.jpg)
